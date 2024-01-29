@@ -18,7 +18,7 @@
 #' @export
 plot_chromothripsis <- function(ShatterSeek_output, chr=chr,BAF=NULL,sample_name="",
 								DEL_color='darkorange1',DUP_color='blue1',
-								t2tINV_color="black",h2hINV_color="black",
+								t2tINV_color="forestgreen",h2hINV_color="black",
 								arc_size=.2, genome = "hg19"){
 	chromNames = c( paste0('chr', c(1:22, 'X')) , c(1:22, 'X'))
 	if ( !(as.character(chr) %in% chromNames)){stop("Chromosome not valid")}
